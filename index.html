@@ -9,6 +9,27 @@
     
     
 <h2>Visual Studio Code</h2>
+
+<h3>ATAJOS DE TECLADO</h3>
+<p>Los atajos de teclado deben ir en C:\Users\<usuario>\AppData\Roaming\Code\User\keybindings.json</p>
+<p>Estos atajos sobrescribirán los que por defecto tenga VS Code</p>
+[
+    {
+        "key": "ctrl+shift+oem_102", // para poner un tag, clase u otra cosa a un texto seleccionado
+        "command": "editor.emmet.action.wrapWithAbbreviation"
+    },
+    {
+        "key": "ctrl+down", // para cambiar el foco a la terminal
+        "command": "workbench.action.terminal.focus",
+    },
+    {
+        "key": "ctrl+up", // para cambiar el foco al editor (archivo que se está editando)
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    }
+]
+
+
 <h3>Para ver los archivos ocultos en VS Code (carpetas .git por ejemplo).</h3>
 <div>
     1. Ir a file > Preferences > Settings (o Ctrl + ,)
