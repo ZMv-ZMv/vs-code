@@ -11,23 +11,26 @@
 <h2>Visual Studio Code</h2>
 
 <h3>ATAJOS DE TECLADO</h3>
-<p>Los atajos de teclado deben ir en C:\Users\<usuario>\AppData\Roaming\Code\User\keybindings.json</p>
-<p>Estos atajos sobrescribirán los que por defecto tenga VS Code</p>
-[
-    {
-        "key": "ctrl+shift+oem_102", // para poner un tag, clase u otra cosa a un texto seleccionado
-        "command": "editor.emmet.action.wrapWithAbbreviation"
-    },
-    {
-        "key": "ctrl+down", // para cambiar el foco a la terminal
-        "command": "workbench.action.terminal.focus",
-    },
-    {
-        "key": "ctrl+up", // para cambiar el foco al editor (archivo que se está editando)
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "terminalFocus"
-    }
-]
+<div>
+    
+    <p>Los atajos de teclado deben ir en C:\Users\<usuario>\AppData\Roaming\Code\User\keybindings.json</p>
+    <p>Estos atajos sobrescribirán los que por defecto tenga VS Code</p>
+    [
+        {
+            "key": "ctrl+shift+oem_102", // para poner un tag, clase u otra cosa a un texto seleccionado
+            "command": "editor.emmet.action.wrapWithAbbreviation"
+        },
+        {
+            "key": "ctrl+down", // para cambiar el foco a la terminal
+            "command": "workbench.action.terminal.focus",
+        },
+        {
+            "key": "ctrl+up", // para cambiar el foco al editor (archivo que se está editando)
+            "command": "workbench.action.focusActiveEditorGroup",
+            "when": "terminalFocus"
+        }
+    ]
+</div>
 
 
 <h3>Para ver los archivos ocultos en VS Code (carpetas .git por ejemplo).</h3>
@@ -57,6 +60,24 @@ Video referencia: https://www.youtube.com/shorts/ytL1aaXjkxU
     ctrl + shift + l -> seleccionar todas las coincidencias en el archivo iguales al texto seleccionado actualmente.
     Shift + Alt + Right Arrow -> seleccionar todo dentro de un tag. Primero selecciona una palabra y con cada Right Arrow va ampliando la selcción.
 </div>
+
+<h3>Emmet</h3>
+<div>
+    div.box.box-$*3>h2{Box $}+p>lorem10
+    <div class="box box1">
+      <h2>Box 1</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, alias.</p>
+    </div>
+    <div class="box box2">
+      <h2>Box 2</h2>
+      <p>Harum quidem veniam dolore temporibus beatae hic quam libero doloremque?</p>
+    </div>
+    <div class="box box3">
+      <h2>Box 3</h2>
+      <p>Inventore temporibus ut praesentium hic? Explicabo, porro cumque? Quae, odio.</p>
+    </div>
+</div>
+
 
 </body>
 </html>
